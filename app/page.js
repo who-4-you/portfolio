@@ -152,7 +152,23 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
                   <dt className="shrink-0 font-medium text-ink sm:w-28">サークル</dt>
-                  <dd>青山スカッシュラケット愛好会 40期 副代表</dd>
+                  <dd className="space-y-2">
+                    <p>青山スカッシュラケット愛好会 40期 副代表</p>
+                    <p>
+                      <a
+                        href="https://www.instagram.com/squash_agu/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm font-medium text-burgundy-deep underline-offset-4 transition-colors hover:text-burgundy hover:underline"
+                      >
+                        Instagram
+                        <span className="text-ink">@squash_agu</span>
+                        <span aria-hidden className="text-gold">
+                          ↗
+                        </span>
+                      </a>
+                    </p>
+                  </dd>
                 </div>
               </dl>
             </div>
