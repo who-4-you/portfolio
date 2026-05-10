@@ -1,17 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #18181b;
+  --background: #141210;
+  --foreground: #f2ebe3;
 }
 
+/* Playing-card inspired palette: felt, cream paper, burgundy & gold suits */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-playfair), ui-serif, Georgia, serif;
+
+  --color-felt: #141210;
+  --color-felt-deep: #0e0d0c;
+  --color-paper: #f2ebe3;
+  --color-paper-muted: #e8dfd4;
+  --color-ink: #1a1716;
+  --color-ink-soft: #4a4543;
+  --color-burgundy: #9c2842;
+  --color-burgundy-deep: #7a1f34;
+  --color-gold: #c9a66b;
+  --color-gold-dim: #a68452;
 }
 
 body {
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Subtle felt grain */
+.bg-felt-grain {
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(201, 166, 107, 0.06), transparent 50%),
+    radial-gradient(ellipse 80% 50% at 100% 50%, rgba(156, 40, 66, 0.04), transparent 45%);
 }
