@@ -34,7 +34,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-5xl gap-12 px-6 py-16 md:grid-cols-2 md:items-center md:gap-16 md:py-24">
           <div className="mx-auto w-full max-w-lg md:mx-0 md:max-w-xl">
             <Image
-              src="/images/LiT_名刺.png"
+              src="/images/LiT名刺.png"
               alt="藤森悠太のプロフィール写真"
               width={1600}
               height={1000}
@@ -121,6 +121,12 @@ export default function Home() {
                 <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
                   <dt className="shrink-0 text-zinc-500 sm:w-24">所属</dt>
                   <dd>青山学院大学 理工学部情報テクノロジー学科</dd>
+                </div>
+                <div className="flex flex-col gap-1 sm:flex-row sm:gap-4">
+                  <dt className="shrink-0 text-zinc-500 sm:w-24">サークル</dt>
+                  <dd>
+                    青山スカッシュラケット愛好会 40期 副代表
+                  </dd>
                 </div>
               </dl>
             </div>
