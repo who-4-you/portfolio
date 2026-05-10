@@ -17,22 +17,7 @@ const products = [
     href: "https://who-4-you.github.io/hitsuji-club/",
     external: true,
   },
-  {
-    title: "UIコンセプト",
-    category: "Design",
-    description:
-      "アプリ画面のワイヤーフレームとカラーパレット案。ユーザー導線を意識したレイアウト研究。",
-    href: "#",
-    external: false,
-  },
-  {
-    title: "ランディングページ案",
-    category: "Web",
-    description:
-      "サービス紹介向けのヒーロー・特徴セクション構成のモックアップ。",
-    href: "#",
-    external: false,
-  },
+  
 ];
 
 export default function Home() {
@@ -106,7 +91,7 @@ export default function Home() {
             </span>
           </div>
           <p className="mx-auto mt-4 max-w-2xl text-center text-ink-soft md:mx-0 md:text-left">
-            制作したウェブページやデザインの一部を紹介します（内容は随時更新できます）。
+            制作したウェブページやデザインの一部を紹介します。
           </p>
           <ul className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {products.map((item) => (
@@ -130,7 +115,7 @@ export default function Home() {
                     : {})}
                   className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-burgundy-deep transition-colors hover:text-burgundy"
                 >
-                  {item.external ? "サイトを開く" : "詳しく見る"}
+                  {item.external ? "サイトを開く" : "閲覧する"}
                   <span aria-hidden className="text-gold">
                     →
                   </span>
